@@ -2,6 +2,8 @@ clear
 
 load('data0509.mat');
 
+modal3(:,106:end)=[];
+
 X_train = normalize([modal1, modal2, modal3]);
 train_label = label;
 
